@@ -14,6 +14,9 @@ import {MatIconModule} from '@angular/material/icon';
 import { AppRoutingModule } from './app-routing.module';
 import { InterceptorService } from './services/interceptors/interceptor.service';
 import { NxWelcomeComponent } from "./nx-welcome.component";
+import { MatInputModule} from '@angular/material/input';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 
 @NgModule({
   declarations: [
@@ -31,6 +34,8 @@ import { NxWelcomeComponent } from "./nx-welcome.component";
     MatSnackBarModule,
     MatIconModule,
     MatToolbarModule,
+    MatInputModule,
+    MatFormFieldModule,
     AppRoutingModule ],
   providers: [{
     provide: HTTP_INTERCEPTORS,

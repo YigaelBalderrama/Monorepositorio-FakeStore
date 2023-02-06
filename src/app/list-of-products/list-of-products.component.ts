@@ -29,6 +29,6 @@ export class ListOfProductsComponent implements OnInit {
       });
   }
   openSnackBar(message: string) {
-    this._snackBar.open(`${message} confirmmed`, 'OK',{ panelClass: ["color123"],  verticalPosition: "top",});
+    this._snackBar.open(`${message} confirmmed`, 'OK',{ panelClass: ["color123"],  verticalPosition:"bottom",});
   }
 }
