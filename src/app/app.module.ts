@@ -11,12 +11,15 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
-import { AppRoutingModule } from './app-routing.module';
 import { InterceptorService } from './services/interceptors/interceptor.service';
 import { NxWelcomeComponent } from "./nx-welcome.component";
 import { MatInputModule} from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { RouterModule, Routes } from '@angular/router';
 
+const appRoutes :Routes = [
+  { path :'home', component:AppComponent },
+];
 
 @NgModule({
   declarations: [
@@ -36,7 +39,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatToolbarModule,
     MatInputModule,
     MatFormFieldModule,
-    AppRoutingModule ],
+    RouterModule.forRoot(appRoutes) 
+  ],
   providers: [{
     provide: HTTP_INTERCEPTORS,
     useClass : InterceptorService,

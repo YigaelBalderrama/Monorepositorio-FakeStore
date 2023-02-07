@@ -17,7 +17,7 @@ export class InterceptorService implements HttpInterceptor {
     req: HttpRequest<any>,
     next: HttpHandler
   ): Observable<HttpEvent<any>> {
-    console.log('el interceptor paso añadio el token');
+    console.log('el interceptor añadio el token');
     const headers = new HttpHeaders({
       'token':
         'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEwLCJ1c2VyIjoiamltbWllX2siLCJpYXQiOjE2NzU2OTQxOTd9.QrcE_6HmOHRC0NmBLKybwJC7hVeEWi5BBC2bZ3VDFK4',

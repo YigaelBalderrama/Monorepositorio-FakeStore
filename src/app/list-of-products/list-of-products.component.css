@@ -18,3 +18,7 @@
   .buttons{
     justify-content: space-between;
   }
+  button.mat-primary{
+    background-color: rgb(182, 55, 175);
+    color: #fff;
+  }
